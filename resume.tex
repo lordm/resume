@@ -1,0 +1,158 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[bookmarks=true,pdfborder={0 0 0}]{hyperref}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+\author{Marwan Osman}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-8pt} \hrulefill \\}
+\newcommand{\interval}[1] { \textit{(#1)} }
+\newcommand{\header}[1]{{\hspace*{0pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} \interval{#2}\\{#3}\\ }}
+\newcommand{\education}[3]{{\textbf{#1} \interval{#2}\\{#3}\\ }}
+\newcommand{\projects}[2]{{ \textbf{#1} #2\\ }}
+\newcommand{\objective}[1]{{#1\\\vspace*{8pt}}}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+%\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 \lineunder 
+#3
+%\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newenvironment{details}{\vspace*{-4pt} \begin{list}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+% END RESUME DEFINITIONS
+
+\begin{document}
+\small
+\smallskip
+\vspace*{-30pt}
+
+\contact{Marwan Osman}
+{\textbf{Address:} 21 Ahmed Kamha St., Camp Caesar, Alexandria, Egypt
+\\\textbf{Mobile:} +201222403046
+\\\textbf{Email:} \href{mailto:marwan.aosman@gmail.com}{marwan.aosman@gmail.com} \textbf{About.me:} \url{http://about.me/marwanosman}
+\\\textbf{Nationality:} Egyptian  \textbf{Date of Birth:} October 24, 1987  \textbf{Military status:} Exempted
+}
+
+\vspace*{16pt}
+
+% PROFESSIONAL OBJECTIVE %
+\header{Professional Objective}
+\objective{ My vision in life is that computers are the most important invention created in modern humanity. I believe in the next decades computers will gain more power and intelligence. I hope to play an important role in developing more intelligent computer and software applications.}
+
+% EDUCATION %
+\header{Education}
+\education{B. Sc. Computer and Systems Engineering}{2005 - 2010}{Faculty of Engineering, Alexandria University, Egypt. Cumulative GPA: 3.2}
+\vspace*{4pt}
+\education{General Secondary Certificate(G.S.C.)(Mathematics Division)}{2003 - 2005}{Saint Marc Colleg, Alexandria, Egypt. Cumulative Score: 97\%}
+  \begin{details}
+    \item \textbf{ Graudation Project "WNMI":} Web Networks and Mail Integrator
+    \item \textbf{ Abstract:} A web framework integrating various social networks and mail providers, providing extensibility to any new coming network. WNMI is implemented in a web interface and a desktop interface featuring offline synchronization.
+    \item \textbf{ Technologies used:} J2EE, JavaFX and the client libraries for different social networks and mail providers.
+  \end{details}
+\vspace*{4pt}
+
+% WORK EXPERIANCE %
+\header{Experiance}
+\employer{eSpace Technologies}{July 2010 - Present}{Junior Web Developer}
+  \begin{achievements}
+    \item Agile Web Development using Ruby on Rails, Javascript, CSS and HTML.
+    \item Member of \textit{Marginize} team, \url{http://www.marginize.com}
+  \end{achievements}
+\vspace*{4pt}
+\employer{ITWorx}{July - August, 2009}{Software Quality Engineer - Intern}
+  \begin{achievements}
+    \item Started with an orientation to software quality engineering process and various types of software testing.
+    \item Worked on software testing automation on one of ITWorx products called I-Sales, using IBM Rational Functional Tester and writing test scripts in Java.
+    \item Presented an introduction session to the basics of Java language to some of my team members.
+    \item Contributed in defining a framework for future automation projects based on an object oriented framework for IBM RFT proposed by IBM.
+  \end{achievements}
+\vspace*{4pt}
+
+% TECHNICAL SKILLS %
+\header{Technical Skills}
+\begin{achievements}
+  \item \textbf{Good Experience with:} Object Oriented Programming, Design Patterns, Agile Programming.
+  \item \textbf{Programming Languages:} Java, C/C++, Basic, 8086 Assembly, Python, Ruby.
+  \item \textbf{Web Development:} HTML, CSS, JavaScript, XML, AJAX, JSON, JavaFX.
+  \item \textbf{DBMS:} Microsoft Access, MySQL, SQLite, Oracle 10g.
+  \item \textbf{Platforms:} Windows 95/98/2000/XP/Vista/7, GNU/Linux Ubuntu.
+  \item \textbf{Mobile Platforms:} Symbian, J2ME, Android.
+  \item \textbf{IDEs:} Eclipse, Microsoft Visual Studio.NET, NetBeans.
+  \item \textbf{Digital Design:} VHDL, Xilinx, ModelSim.
+  \item \textbf{Design and Graphics Software (Fair knowledge):} Adobe Photoshop, 3D Studio Max, Adobe Premiere, Adobe Macromedia Flash.
+\end{achievements}
+\vspace*{4pt}
+
+\newpage
+
+% PERSONAL SKILLS %
+\header{Personal Skills}
+\begin{tabular}{l l l l}
+$\bullet$ Team Working& 
+$\bullet$ Time Management&
+$\bullet$ Self Learner& 
+$\bullet$ Working under pressure\\
+\end{tabular}
+\vspace*{4pt}
+
+% LANGUAGES %
+\header{Languages}
+\begin{tabular}{l l l}
+$\bullet$ \textbf{Arabic:} Native& 
+$\bullet$ \textbf{English:} Fluent&
+$\bullet$ \textbf{French:} Fluent (DELF certified,2004)\\
+\end{tabular}
+\vspace*{4pt}
+
+% ACTIVITIES %
+\header{Extra Curricular Activities}
+\begin{achievements}
+	\item Blogging on http://marwanosman.blogspot.com
+  \item Presented a 101 session for Information Technology Institute (ITI) about \textbf{Python and Google App Engine} \interval{May, 2011}
+  \item Participated in \textbf{Startup Weekend Cairo 2011}, Project \textbf{Jayyim} \interval{April, 2011}
+  \item Participated in the organization team of \textbf{Software Freedom Day@Alexandria University} festival \interval{September, 2009}
+    \subitem Supervised a study group about Python.
+    \subitem Presented a session about "Programming under Linux in Python".
+  \item Participated in the \textbf{Microsoft Imagine Cup booth in the Faculty of Engineering, Alexandria University} \interval{November, 2008}
+  \item Attended \textbf{IEEE-ASST 3rd annual event "Leading your career, Leading your society"}, and associated workshop "Effective Time Management" \interval{September, 2007}
+  \item Attended \textbf{Algorithms and programming training for EOI} \interval{June - September, 2007}
+    \subitem \textit{Topics:} Graphs structure and algorithms, Backtracking, Geometric Algorithms, Binary Search Trees, Heaps, Dynamic Programming.
+\end{achievements}
+
+% SELECTED ACADEMIC PROJECTS %
+\header{Selected Academic Projects}
+\projects{Order Entry System}{\interval{January, 2010}}
+	\begin{details}
+		\item Simple order entry system where customers can register, view and buy products, and on the other hand allows sellers to manage their stocks.
+		\item \textbf{my part:} Back-end to Front-end implementation of the admin part using Java Beans, Servlets, JSP, HTML, Javascript, and CSS. Implementing I18N for the project in English, French and Arabic.
+	\end{details}
+\projects{Simple HTTP Reliable Data Transfer over UDP}{\interval{December, 2009}}
+  \begin{details}
+    \item Implementation of TCP with selective repeat over UDP and simple HTTP GET command to transfer files between hosts.
+    \item Using C++ and Berkely Sockets.
+  \end{details}
+\projects{Student Registration System}{\interval{June, 2009}}
+  \begin{details}
+    \item Simple student registration system where students can register courses, and teaching staff members can obtain reports on the students.
+    \item \textbf{my part:} Contributing to the DB design, implementation of the system in Oracle 10g and writing PL/SQL procedures.
+  \end{details}
+\end{document}
