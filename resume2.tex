@@ -1,0 +1,147 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\newcommand{\interval}[1]{\textit{(#1)} }
+\newenvironment{details}{\vspace*{-4pt} \begin{list}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+
+\begin{document}
+
+\pagestyle{empty}
+\renewcommand{\headrulewidth}{0.0pt}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\sl Last updated Feb 21, 2015}
+\name{Marwan Osman}
+\address{ 7 Square du Bois Perrin, 35700, Rennes, France \\ +33603754150  \href{mailto:marwan.aosman@gmail.com}{marwan.aosman@gmail.com} \\ \url{http://www.marwanosman.com}}
+
+\begin{resume}
+
+\section{Professional Objective}
+To make a contribution in progressing computers intelligence through creating and building smart intelligent web and mobile applications. \\
+Searching and looking to bring the latest state of the art from academia, to design and build smarter intelligent and useful products.
+ 
+\section{Education}
+
+    {\sl MSc.}, Computer Vision \hfill Jul (2015) \\
+    University of Burgundy, France \hspace{0.2in}  Grade: Distinction \\
+    {\sl Thesis title:} Visual Servoing from The Trifocal Tensor
+
+    {\sl BSc.}, Computer and Systems Engineering \hfill Jul (2010) \\
+    University of Alexandria, Egypt \hspace{0.2in}  CGPA: 3.18 \\
+    {\sl Graduation project title:} WNMI: Web Networks and Mail Integrator
+    \begin{details}
+      \item \textbf{Abstract:} A web framework integrating various social networks and mail providers, providing extensibility to any new coming network. WNMI is implemented in a web interface and a desktop interface featuring offline synchronization. The main concept of the project is to adhere with the rapid pace of emerging soical networks and combine all the user's social streams in on user-friendly interface.
+    \end{details}
+ 
+\section{Experience}
+   \vspace{-0.1in}
+   \begin{tabbing}
+   \hspace{2.7in}\= \hspace{1.8in}\= \kill % set up two tab positions
+   {\bf Research Intern}\>{\bf Vecteo SAS}\> \hfill Jun (2014) - Aug (2014)\\
+                                    \>Le Creusot, France
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    Implementation and test of an analytical solution to inverse kinematic problem for 6-DOF robot manipulator.\\
+    Detection of disconnection in graphs, searching a solution for motion planning and definition of a new strategy ensuring the convergence of the algorithm.\\
+    {\sl Technologies used:}  C++
+
+   \begin{tabbing}
+   \hspace{2.7in}\= \hspace{1.8in}\= \kill % set up two tab positions
+    {\bf Senior Software Engineer}\>{\bf Splinter.Me}\> \hfill Mar (2013) - Aug (2013)\\
+                                    \>Alexandria, Egypt
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    splinter.me is a new social recruiting platform built on top of automatic data integration from multiple social networks to facilitate the recruiting process for both job-seekers and recruiters.\\
+    {\sl Technologies used:} Ruby on Rails, Javascript, Neo4J Database, MongoDB
+
+   \begin{tabbing}
+   \hspace{2.7in}\= \hspace{1.8in}\= \kill % set up two tab positions
+    {\bf Junior Web Developer}\>{\bf eSpace Technologies}\> \hfill Jul (2010) - Mar (2013)\\
+                                    \>Alexandria, Egypt
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   Developing cutting edge social applications with the Ruby on Rails stack.\\
+   Project \textit{Marginize}, \url{http://www.marginize.com} {August 2010 - May 2011}
+   \begin{details}
+   \item A social tool that adds a margin to any public webpage, enabling users to interact on top of it, checking in, adding comments and reading discussions about it pulled from social networks. 
+   \end{details}
+   Project \textit{Nextly}, \url{http://nextly.com} {May 2011 - March 2013}
+   \begin{details}
+   \item A social streams browser that enhances the user experience browsing twitter, facebook and rss feeds, in a more modern way that is fast, efficient and user-friendly. 
+   \end{details}
+   Partcipating in company's hack days, implementing ideas such as: 'The Industrial-Strength Audio Search Algorithm' empowering Shazam, an Android Time tracker app, a javascript tool to easily create guided tours for web applications.
+
+   Presenting Technical sessions for colleagues: 'Edge Rank Algorithm' used to populate the Facebook news feed feature, and 'Bloom Filters' and how they can be used to implement a trending topics algorithms like on Twitter.\\
+    {\sl Technologies used:} Ruby on Rails, Javascript, MySQL
+
+   \begin{tabbing}
+   \hspace{2.7in}\= \hspace{1.8in}\= \kill % set up two tab positions
+    {\bf Software Quality Engineer - Intern}\>{\bf ITWorx}\> \hfill Jul (2009) - Aug (2009)\\
+                                    \>Alexandria, Egypt
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   Worked on software testing automation on one of ITWorx products called I-Sales, using IBM Rational Functional Tester and writing test scripts in Java.
+
+   Presented an introduction session to the basics of Java language to some of my team members.
+
+   Contributed in defining a framework for future automation projects based on an object oriented framework for IBM RFT proposed by IBM.\\
+    {\sl Technologies used:} Java, IBM RFT
+
+
+\section{Skills}
+    \begin{itemize}
+      \item \textbf{Software Design:} Object Oriented Programming, Design Patterns, Agile Programming.
+      \item \textbf{Programming Languages:} Java, C/C++, Basic, 8086 Assembly, Python, Ruby.
+      \item \textbf{Scientific:} OpenCV, Matlab, ViSP, ROS.
+      \item \textbf{Web Development:} HTML, CSS, JavaScript, JavaFX, Ruby on Rails.
+      \item \textbf{DBMS:} Microsoft Access, MySQL, SQLite, Oracle 10g, MongoDB, Neo4J.
+      \item \textbf{Platforms:} Windows 95/98/2000/XP/Vista/7, GNU/Linux Ubuntu, GNU/Linux ArchLinux.
+      \item \textbf{Mobile Platforms:} Symbian, J2ME, Android.
+      \item \textbf{IDEs:} Eclipse, Microsoft Visual Studio.NET, NetBeans, Vim.
+      \item \textbf{Digital Design:} VHDL, Xilinx, ModelSim.
+      \item \textbf{Design and Graphics Software (Fair knowledge):} Adobe Photoshop, 3D Studio Max, Adobe Premiere, Adobe Macromedia Flash, Gimp.
+    \end{itemize}
+ 
+\section{Extra Curricular Activities}
+    \begin{itemize}
+    \item Enrolling in Coursera and Udacity online courses: AI, Machine Learning, Programming a Robotic Car, Computer Vision Fundamentals, Heterogenous Parallel Programming.
+    \item Implemented a Vim plugin to reload your browser automatically on file save using xdotools on Gnome Linux. \interval{March, 2012} \href{https://github.com/lordm/vim-browser-reload-linux}{Github repo}
+    \item Presented a 101 session for Information Technology Institute (ITI) about \textbf{Python and Google App Engine} \interval{May, 2011}
+    \item Participated in \textbf{Startup Weekend Cairo 2011}, Project \textbf{Jayyim} \interval{April, 2011}
+      \subitem A real-time guitar amp and effects modeling mobile application for Android.
+    \item Participated in organization of \textbf{Software Freedom Day@Alexandria University} festival \interval{September, 2009}
+      \subitem Supervised a study group about Python.
+      \subitem Presented a session about "Programming under Linux in Python".
+    \item Participated in \textbf{Microsoft Imagine Cup booth in the Faculty of Engineering, Alexandria University} \interval{November, 2008}
+    \item Attended \textbf{IEEE-ASST 3rd annual event "Leading your career, Leading your society"}, and associated workshop "Effective Time Management" \interval{September, 2007}
+    \item Attended \textbf{Algorithms and programming training for EOI} \interval{June - September, 2007}
+      \subitem \textit{Topics:} Graphs structure and algorithms, Backtracking, Geometric Algorithms, Binary Search Trees, Heaps, Dynamic Programming.
+    \end{itemize}
+
+\section {References}
+% \vspace{-0.1in}
+% \begin{tabbing}
+%  \hspace{2.75in}\=\kill
+% {\bf Mohamed G. Elfeky}    \> {\bf Tilman Reinhardt}             \\
+% Software Engineer - Google \> Member of technical staff - Google \\
+% mgelfeky@google.com        \> tilman@google.com                  \\
+% +1 (650)215-0544           \> +1 (650)214-2162                   
+% \end{tabbing}
+% 
+% \begin{tabbing}
+%  \hspace{2.75in}\=\kill
+% {\bf Ramon Baldrich}      \> {\bf Youssef Mikhail Bassily}               \\
+% Associate Professor - UAB \> Head of ICT Dept. - Bibliotheca Alexandrina \\
+% ramon@cvc.uab.es          \> youssef.mikhail@bibalex.org                 \\
+% +34 (935)81-2592          \> +(203) 483-9999, Ext: 1428                   
+% \end{tabbing}
+Available upon request.
+
+\end{resume}
+\end{document}
+
